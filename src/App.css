@@ -1,0 +1,45 @@
+/* App.css */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.App {
+  padding-top: 20px; /* Add some padding to the top of the app container */
+}
+
+
+.footer-info {
+  display: none;
+}
+
+.footer-open .footer-info {
+  display: block;
+}
+
+.slide-in {
+  animation: slideIn 0.5s forwards;
+}
+
+.slide-out {
+  animation: slideOut 0.5s forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
