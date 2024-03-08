@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import './App.css';
+import Tasks from './Tasks';
+import Footer from './Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container d-flex justify-content-center align-items-center">
+        <Tasks />
+      </div>
+      <Footer />
     </div>
   );
 }
